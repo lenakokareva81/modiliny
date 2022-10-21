@@ -1,0 +1,61 @@
+.container {
+    display: grid;
+    width: 800px;
+    height: 785px;
+    grid-template-areas: "red red white1 white1"
+    "white2 white2  white3 white3"
+     "yellow white4 blue white6"
+     "yellow white4 white5 white6";
+    grid-template-columns: 50Px 1fr 1fr 70px ;
+    grid-template-rows: 1fr 20% 1fr 20px;
+    gap: 0rem;
+    border:2px solid black;
+}
+
+.red {
+    background-color: rgb(233, 27, 27);
+    grid-area: red;
+    border:2px solid black;
+
+}
+.white1 {
+    background-color: white;
+    grid-area: white1;
+    border:2px solid black;
+}
+.white2 {
+    background-color: white;
+    grid-area: white2;
+    border:2px solid black;
+}
+.white3 {
+    background-color: white;
+    grid-area: white3;
+    border:2px solid black;
+}
+.white4 {
+    background-color: white;
+    grid-area: white4;
+    border:2px solid black;
+}
+.white5 {
+    background-color: white;
+    grid-area: white5;
+    border:2px solid black;
+}
+.white6 {
+    background-color: white;
+    grid-area: white6;
+    border:2px solid black;
+}
+.yellow {
+    background-color: yellow;
+    grid-area: yellow;
+    border:2px solid black;
+}
+.blue {
+    background-color:blue;
+    grid-area: blue;
+    border:2px solid black;
+    width: 100%
+}
