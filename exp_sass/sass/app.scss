@@ -1,0 +1,27 @@
+@mixin font-style-intro($fz_intro, $color_intro) {
+    font-family: 'Intro ';
+font-style: normal;
+font-weight: 400;
+font-size: $fz_intro;
+line-height: $fz_intro*1.5;
+color: $color_intro;
+}
+@mixin font-style-Roboto($fz_Roboto, $color_Roboto) {
+   font-family: 'Roboto Slab';
+   font-style: normal;
+   font-weight: 300;
+   font-size: $fz_Roboto;
+   line-height: 160%;
+   color: $color_Roboto;
+}
+
+h1{
+    @include font-style-intro(10px, #000000);
+}
+.karta {
+    width: 30%;
+    border: 1px solid black;
+    padding-left: 33px;
+}
+.karta__header {@include font-style-intro(30px, #000000);}
+.karta__text{@include font-style-intro(20px, #000000);}
